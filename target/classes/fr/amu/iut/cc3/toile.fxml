@@ -19,56 +19,43 @@
         <Line endX="200" endY="400.0" startX="200.0" startY="0" styleClass="toile" />
         <Line endX="200.0" endY="400.0" rotate="60.0" startX="200.0" styleClass="toile" />
         <Line endX="200.0" endY="400.0" rotate="120.0" startX="200.0" styleClass="toile" />
-        <Text text="Compétence 1" x="170" y="0" />
-        <Text text="Compétence 2" x="300" y="100" />
-        <Text text="Compétence 3" x="300" y="300" />
-        <Text text="Compétence 4" x="170" y="410" />
-        <Text text="Compétence 5" x="26" y="300" />
-        <Text text="Compétence 6" x="26" y="99" />
+        <Text text="Competence 1" x="170" y="0" />
+        <Text text="Competence 2" x="300" y="100" />
+        <Text text="Competence 3" x="300" y="300" />
+        <Text text="Competence 4" x="170" y="410" />
+        <Text text="Competence 5" x="26" y="300" />
+        <Text text="Competence 6" x="26" y="99" />
         <Pane fx:id="toile" styleClass="toile" />
     </Pane>
-   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="234.0">
+   <GridPane alignment="CENTER">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
       <children>
-         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-            <children>
-               <Label prefHeight="16.0" prefWidth="154.0" text="Compétence 1" />
-               <TextField prefHeight="24.0" prefWidth="76.0" />
-            </children></HBox>
-         <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
-            <children>
-               <Label prefHeight="16.0" prefWidth="154.0" text="Compétence 2" />
-               <TextField prefHeight="24.0" prefWidth="76.0" />
-            </children>
-         </HBox>
-         <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
-            <children>
-               <Label prefHeight="16.0" prefWidth="154.0" text="Compétence 3" />
-               <TextField prefHeight="24.0" prefWidth="76.0" />
-            </children>
-         </HBox>
-         <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
-            <children>
-               <Label prefHeight="16.0" prefWidth="154.0" text="Compétence 4" />
-               <TextField prefHeight="24.0" prefWidth="76.0" />
-            </children>
-         </HBox>
-         <HBox alignment="CENTER" layoutX="10.0" layoutY="310.0" prefHeight="100.0" prefWidth="200.0">
-            <children>
-               <Label prefHeight="16.0" prefWidth="154.0" text="Compétence 5" />
-               <TextField prefHeight="24.0" prefWidth="76.0" />
-            </children>
-         </HBox>
-         <HBox alignment="CENTER" layoutX="10.0" layoutY="262.0" prefHeight="100.0" prefWidth="200.0">
-            <children>
-               <Label prefHeight="16.0" prefWidth="154.0" text="Compétence 6" />
-               <TextField prefHeight="24.0" prefWidth="76.0" />
-            </children>
-         </HBox>
-         <HBox alignment="CENTER" layoutX="10.0" layoutY="220.0" prefHeight="100.0" prefWidth="200.0">
-            <children>
-               <Button mnemonicParsing="false" text="Tracer" />
-               <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Vider" />
-            </children>
-         </HBox>
-      </children></VBox>
+         <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Tracer" GridPane.rowIndex="6" />
+         <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Vider" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         <Label text="Compétence 1" />
+         <Label text="Compétence 2" GridPane.rowIndex="1" />
+         <Label text="Compétence 3" GridPane.rowIndex="2" />
+         <Label text="Compétence 4" GridPane.rowIndex="3" />
+         <Label text="Compétence 5" GridPane.rowIndex="4" />
+         <Label text="Compétence 6" GridPane.rowIndex="5" />
+         <TextField GridPane.columnIndex="1" />
+         <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      </children>
+   </GridPane>
 </HBox>

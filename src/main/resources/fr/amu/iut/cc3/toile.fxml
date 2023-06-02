@@ -19,12 +19,12 @@
         <Line endX="200" endY="400.0" startX="200.0" startY="0" styleClass="toile" />
         <Line endX="200.0" endY="400.0" rotate="60.0" startX="200.0" styleClass="toile" />
         <Line endX="200.0" endY="400.0" rotate="120.0" startX="200.0" styleClass="toile" />
-        <Text text="Compétence 1" x="170" y="0" />
-        <Text text="Compétence 2" x="300" y="100" />
-        <Text text="Compétence 3" x="300" y="300" />
-        <Text text="Compétence 4" x="170" y="410" />
-        <Text text="Compétence 5" x="26" y="300" />
-        <Text text="Compétence 6" x="26" y="99" />
+        <Text text="Competence 1" x="170" y="0" />
+        <Text text="Competence 2" x="300" y="100" />
+        <Text text="Competence 3" x="300" y="300" />
+        <Text text="Competence 4" x="170" y="410" />
+        <Text text="Competence 5" x="26" y="300" />
+        <Text text="Competence 6" x="26" y="99" />
         <Pane fx:id="toile" styleClass="toile" />
     </Pane>
    <GridPane alignment="CENTER">
